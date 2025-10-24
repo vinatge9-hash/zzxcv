@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Luxora Fitness - Programs</title>
+  <meta name=\"description\" content=\"Curated, coach-led programs designed for results—clear, transparent, and achievable.\" />
+  <meta property=\"og:title\" content=\"Luxora Fitness - Programs\" />
+  <meta property=\"og:description\" content=\"Discover our program lineup with schedules, trainers, and enrollment.\" />
+  <meta property=\"og:type\" content=\"website\" />
+  <meta name=\"theme-color\" content=\"#0D6EFF\" />
+  <script src=\"https://cdn.tailwindcss.com\"></script>
+  <style> html{scroll-behavior:smooth} .glass{backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); background: rgba(255,255,255,.92); border:1px solid rgba(255,255,255,.6);} </style>
+</head>
+<body class=\"bg-neutral-50 text-neutral-900\">
+  <a href=\"#main\" class=\"sr-only focus:not-sr-only\">Skip to content</a>
+  <header class=\"fixed w-full top-0 z-40 bg-transparent\" aria-label=\"Main navigation\">
+    <nav class=\"max-w-7xl mx-auto px-6 py-4 flex items-center justify-between\" role=\"navigation\">
+      <a href=\"index.html\" class=\"text-2xl font-display\">Luxora Fitness</a>
+      <div class=\"hidden md:flex gap-6\">
+        <a href=\"#overview\" class=\"hover:text-primary\">Overview</a>
+        <a href=\"#trainers\" class=\"hover:text-primary\">Coaches</a>
+        <a href=\"#enroll\" class=\"bg-primary text-white px-4 py-2 rounded-full\">Enroll</a>
+      </div>
+      <button id=\"mobile-btn2\" class=\"md:hidden w-8 h-8\" aria-label=\"Open menu\"></button>
+    </nav>
+  </header>
+
+  <main id=\"main\" class=\"pt-24\">
+    <section id=\"overview\" class=\"py-16 bg-white\" aria-label=\"Programs Overview\">
+      <div class=\"max-w-7xl mx-auto px-6\">
+        <h1 class=\"text-3xl font-heading font-bold mb-4\">Our Programs</h1>
+        <p class=\"text-neutral-700 mb-8\">Filter by focus, view trainer, and enroll with a click.</p>
+        <div class=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6\">
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"h-40 mb-4 bg-gradient-to-br from-primary to-secondary rounded-lg\"></div>
+            <div class=\"font-semibold mb-1\">Performance Strength</div>
+            <div class=\"text-sm text-neutral-700\">Level: Intermediate/Advanced</div>
+            <div class=\"text-xs text-neutral-500\">3x/wk with progressive overload</div>
+          </div>
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"h-40 mb-4 bg-gradient-to-br from-primary/60 to-secondary/60 rounded-lg\"></div>
+            <div class=\"font-semibold mb-1\">Endurance Builder</div>
+            <div class=\"text-sm text-neutral-700\">Level: All levels</div>
+            <div class=\"text-xs text-neutral-500\">Tempo runs, intervals</div>
+          </div>
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"h-40 mb-4 bg-gradient-to-br from-accent to-primary rounded-lg\"></div>
+            <div class=\"font-semibold mb-1\">Mobility & Recovery</div>
+            <div class=\"text-sm text-neutral-700\">Level: All levels</div>
+            <div class=\"text-xs text-neutral-500\">Soft tissue work</div>
+          </div>
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"h-40 mb-4 bg-gradient-to-br from-secondary to-accent rounded-lg\"></div>
+            <div class=\"font-semibold mb-1\">Hypertrophy Focus</div>
+            <div class=\"text-sm text-neutral-700\">Level: Intermediate/Advanced</div>
+            <div class=\"text-xs text-neutral-500\">Lifts and accessory work</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id=\"trainers\" class=\"py-16 bg-neutral-50\" aria-label=\"Coaches\">
+      <div class=\"max-w-7xl mx-auto px-6\">
+        <h2 class=\"text-3xl font-heading font-bold mb-6 text-center\">Meet Your Coaches</h2>
+        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"font-semibold mb-2\">Coach A</div>
+            <div class=\"text-sm text-neutral-700 mb-2\">Strength & Programming</div>
+            <p class=\"text-xs text-neutral-600\">10+ years guiding clients to peak performance.</p>
+          </div>
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"font-semibold mb-2\">Coach B</div>
+            <div class=\"text-sm text-neutral-700 mb-2\">Nutrition & Recovery</div>
+            <p class=\"text-xs text-neutral-600\">Fueling progress with evidence-based nutrition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id=\"enroll\" class=\"py-16 bg-white\" aria-label=\"Enroll\">
+      <div class=\"max-w-3xl mx-auto text-center px-6\">
+        <h2 class=\"text-3xl font-heading font-bold mb-2\">Enroll in a Program</h2>
+        <p class=\"mb-4 text-neutral-700\">Secure your spot with a simple enrollment form.</p>
+        <form class=\"flex flex-col sm:flex-row gap-3 items-center justify-center\">
+          <input placeholder=\"Name\" aria-label=\"Name\" class=\"p-2 border rounded w-full sm:w-auto\" />
+          <input placeholder=\"Email\" aria-label=\"Email\" class=\"p-2 border rounded w-full sm:w-auto\" />
+          <button class=\"bg-primary text-white px-6 py-2 rounded\" type=\"button\">Enroll</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class=\"bg-neutral-900 text-white py-12\" aria-label=\"Footer\">
+    <div class=\"max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6\">
+      <div>
+        <strong>Luxora Fitness</strong>
+        <p class=\"text-sm opacity-70\">Premium gym with glassy interfaces.</p>
+      </div>
+      <div>
+        <div class=\"font-semibold mb-2\">Programs</div>
+        <div class=\"text-sm opacity-80\">Performance Strength</div>
+        <div class=\"text-sm opacity-80\">Endurance Builder</div>
+      </div>
+      <div>
+        <div class=\"font-semibold mb-2\">Contact</div>
+        <div class=\"text-sm opacity-80\">123 Elite Ave, Metropolis</div>
+        <div class=\"text-sm opacity-80\">(555) 000-0000</div>
+      </div>
+      <div>
+        <div class=\"font-semibold mb-2\">Follow</div>
+        <div class=\"flex gap-2\"><span class=\"w-8 h-8 rounded-full bg-white/20 flex items-center justify-center\">IG</span><span class=\"w-8 h-8 rounded-full bg-white/20 flex items-center justify-center\">FB</span></div>
+      </div>
+    </div>
+    <div class=\"text-center text-neutral-400 mt-6 text-sm\">© Luxora Fitness 2025</div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.style.opacity = 1; });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('section, .glass').forEach(el => { el.style.opacity = 0; obs.observe(el); });
+  </script>
+</body>
+</html>
