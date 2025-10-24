@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Luxora Fitness - About</title>
+  <meta name=\"description\" content=\"Luxora Fitness story, philosophy, and the team behind the results.\" />
+  <meta property=\"og:title\" content=\"Luxora Fitness - About\" />
+  <meta property=\"og:description\" content=\"Meet the team and philosophy that powers Luxora.\" />
+  <meta property=\"og:type\" content=\"website\" />
+  <meta name=\"theme-color\" content=\"#0D6EFF\" />
+  <script src=\"https://cdn.tailwindcss.com\"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: { DEFAULT: '#0D6EFF' }, secondary: { DEFAULT: '#FF6A00' } },
+          fontFamily: { display: ['Playfair Display','serif'], heading: ['Montserrat','system-ui'], body: ['Inter','system-ui'] },
+          animation: { 'fade-in-left': 'fadeInLeft 0.6s ease-out' },
+          keyframes: { fadeInLeft: { '0%': { opacity:0, transform:'translateX(-20px)' }, '100%': { opacity:1, transform:'translateX(0)' } } }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .gradient-text { background: linear-gradient(135deg, #0D6EFF 0%, #FF6A00 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glass { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); background: rgba(255,255,255,0.9); border: 1px solid rgba(255,255,255,0.6); }
+  </style>
+</head>
+<body class=\"bg-neutral-50 text-neutral-900\">
+  <a href=\"#main\" class=\"sr-only focus:not-sr-only\">Skip to content</a>
+
+  <header class=\"fixed w-full top-0 z-40 bg-transparent\" aria-label=\"Main navigation\">
+    <nav class=\"max-w-7xl mx-auto px-6 py-4 flex items-center justify-between\" role=\"navigation\">
+      <a href=\"index.html\" class=\"text-2xl font-display\" aria-label=\"Luxora Home\">Luxora Fitness</a>
+      <div class=\"hidden md:flex items-center gap-6\">
+        <a href=\"#story\" class=\"hover:text-primary\" aria-label=\"Our Story\">Our Story</a>
+        <a href=\"#philosophy\" class=\"hover:text-primary\" aria-label=\"Philosophy\">Philosophy</a>
+        <a href=\"#team\" class=\"hover:text-primary\" aria-label=\"Meet the Team\">Meet the Team</a>
+        <a href=\"#tour\" class=\"bg-primary text-white px-4 py-2 rounded-full\" aria-label=\"Book a Tour\">Book a Tour</a>
+      </div>
+      <button id=\"mobile-btn\" class=\"md:hidden w-8 h-8 flex flex-col justify-between\" aria-label=\"Open menu\">\n        <span class=\"block h-0.5 bg-white\"></span>\n        <span class=\"block h-0.5 bg-white\"></span>\n        <span class=\"block h-0.5 bg-white\"></span>\n      </button>
+    </nav>
+  </header>
+
+  <main id=\"main\" class=\"pt-24\">
+    <section id=\"story\" class=\"py-20 bg-white\" aria-label=\"Brand Story\">
+      <div class=\"max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center\">
+        <div class=\"overflow-hidden\">
+          <h2 class=\"text-3xl font-heading font-bold mb-4 gradient-text\">Our Story</h2>
+          <p class=\"text-neutral-700\">Luxora Fitness was founded on the belief that premium fitness should blend science, hospitality, and clarity. We pair elite coaching with immersive, glassy interfaces to create an environment where you feel supported, understood, and challenged.</p>
+        </div>
+        <div class=\"glass p-6 rounded-xl\" aria-label=\"Story image\">
+          <div class=\"h-48 bg-gradient-to-br from-primary to-secondary rounded-lg\"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id=\"philosophy\" class=\"py-20 bg-neutral-50\" aria-label=\"Philosophy\">
+      <div class=\"max-w-7xl mx-auto px-6\">
+        <h2 class=\"text-3xl font-heading font-bold mb-6 text-center\">Philosophy</h2>
+        <div class=\"grid grid-cols-1 md:grid-cols-3 gap-6\">
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"mb-2 text-xl font-semibold\">Science-Backed Coaching</div>
+            <p class=\"text-sm text-neutral-700\">Evidence-based progressions and individualized programming.</p>
+          </div>
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"mb-2 text-xl font-semibold\">Hospitality in Motion</div>
+            <p class=\"text-sm text-neutral-700\">Welcoming environment with premium service at every touchpoint.</p>
+          </div>
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"mb-2 text-xl font-semibold\">Transparent Progress</div>
+            <p class=\"text-sm text-neutral-700\">Clear goals, measurable outcomes, and visible milestones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id=\"team\" class=\"py-20 bg-white\" aria-label=\"Meet the Team\">
+      <div class=\"max-w-7xl mx-auto px-6\">
+        <h2 class=\"text-3xl font-heading font-bold mb-6 text-center\">Meet the Team</h2>
+        <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6\">
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"font-semibold mb-2\">Coach A</div>
+            <div class=\"text-sm text-neutral-700 mb-2\">Strength & Conditioning</div>
+            <p class=\"text-xs text-neutral-600\">10+ years guiding clients to peak performance.</p>
+          </div>
+          <div class=\"glass p-6 rounded-xl\">
+            <div class=\"font-semibold mb-2\">Coach B</div>
+            <div class=\"text-sm text-neutral-700 mb-2\">Nutrition & Recovery</div>
+            <p class=\"text-xs text-neutral-600\">Fueling progress with evidence-based nutrition.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id=\"tour\" class=\"py-16 bg-gradient-to-r from-primary to-secondary text-white\" aria-label=\"CTA Tour\">
+      <div class=\"max-w-4xl mx-auto px-6 text-center\">
+        <h2 class=\"text-3xl font-heading font-bold mb-2\">Join the Luxora Experience</h2>
+        <p class=\"mb-6\">Book a tour to feel the glass-forward environment firsthand.</p>
+        <a href=\"#signup\" class=\"inline-block bg-white text-primary px-6 py-3 rounded-full font-semibold\">Book a Tour</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class=\"bg-neutral-900 text-white py-12\" aria-label=\"Footer\">
+    <div class=\"max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6\">
+      <div>
+        <strong>Luxora Fitness</strong>
+        <p class=\"text-sm opacity-70\">Premium gym with glassy interfaces.</p>
+      </div>
+      <div>
+        <div class=\"font-semibold mb-2\">Our Story</div>
+        <div class=\"text-sm opacity-80\">Founded on science, hospitality, and clarity.</div>
+      </div>
+      <div>
+        <div class=\"font-semibold mb-2\">Team</div>
+        <div class=\"text-sm opacity-80\">Coach A • Coach B</div>
+      </div>
+      <div>
+        <div class=\"font-semibold mb-2\">Follow</div>
+        <div class=\"flex gap-2\"><span class=\"w-8 h-8 rounded-full bg-white/20 flex items-center justify-center\">IG</span><span class=\"w-8 h-8 rounded-full bg-white/20 flex items-center justify-center\">FB</span></div>
+      </div>
+    </div>
+    <div class=\"text-center text-neutral-400 mt-6 text-sm\">© Luxora Fitness 2025</div>
+  </footer>
+
+  <script>
+    // small UX: fade-in sections on view
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.style.opacity = 1; });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('section, .glass').forEach(el => { el.style.opacity = 0; obs.observe(el); });
+  </script>
+</body>
+</html>
