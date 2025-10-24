@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Luxora Fitness - Contact</title>
+  <meta name=\"description\" content=\"Get in touch, book a consultation, or locate Luxora facilities.\" />
+  <meta property=\"og:title\" content=\"Luxora Fitness - Contact\" />
+  <meta property=\"og:description\" content=\"Reach out for questions, tours, or visits.\" />
+  <script src=\"https://cdn.tailwindcss.com\"></script>
+  <style> html{scroll-behavior:smooth} .glass{backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); background: rgba(255,255,255,.95); border:1px solid rgba(255,255,255,.6);} </style>
+</head>
+<body class=\"bg-neutral-50 text-neutral-900\">
+  <a href=\"#main\" class=\"sr-only focus:not-sr-only\">Skip to content</a>
+  <header class=\"fixed w-full top-0 z-40 bg-transparent\" aria-label=\"Main navigation\">
+    <nav class=\"max-w-7xl mx-auto px-6 py-4 flex items-center justify-between\" role=\"navigation\">
+      <a href=\"index.html\" class=\"text-2xl font-display\">Luxora Fitness</a>
+      <div class=\"hidden md:flex gap-6\">
+        <a href=\"#form\" class=\"hover:text-primary\">Form</a>
+        <a href=\"#hours\" class=\"hover:text-primary\">Hours</a>
+      </div>
+      <button id=\"mobile-btn3\" class=\"md:hidden w-8 h-8\" aria-label=\"Open menu\"></button>
+    </nav>
+  </header>
+
+  <main id=\"main\" class=\"pt-24\">
+    <section id=\"contact\" class=\"py-16 bg-white\" aria-label=\"Contact Form and Details\">
+      <div class=\"max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8\">
+        <form id=\"form\" class=\"glass p-6 rounded-xl\" aria-label=\"Contact form\">
+          <div class=\"text-xl font-semibold mb-4\">Get in Touch</div>
+          <div class=\"mb-3\"><input aria-label=\"Name\" placeholder=\"Your name\" class=\"w-full p-3 border rounded\"/></div>
+          <div class=\"mb-3\"><input aria-label=\"Email\" placeholder=\"Email\" class=\"w-full p-3 border rounded\"/></div>
+          <div class=\"mb-3\"><textarea aria-label=\"Message\" placeholder=\"Your message\" class=\"w-full p-3 border rounded h-30\"></textarea></div>
+          <button type=\"submit\" class=\"bg-primary text-white px-6 py-3 rounded\">Submit</button>
+        </form>
+        <div class=\"glass p-6 rounded-xl\" aria-label=\"Location and hours\">
+          <div class=\"font-semibold mb-2\">Luxora Fitness</div>
+          <div class=\"text-sm text-neutral-700\">123 Elite Ave, Metropolis</div>
+          <div class=\"text-sm text-neutral-700\">Open daily 5:00–23:00</div>
+          <div class=\"mt-4 h-48 bg-gradient-to-br from-primary to-secondary rounded-lg\"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class=\"bg-neutral-900 text-white py-12\" aria-label=\"Footer\">
+    <div class=\"max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6\">
+      <div>
+        <strong>Luxora Fitness</strong>
+        <p class=\"text-sm opacity-70\">Premium coaching and transparent programs.</p>
+      </div>
+      <div class=\"text-sm text-neutral-400\">Phone: +1-555-000-0000</div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting) e.target.style.opacity=1; }) },{threshold:0.15});
+    document.querySelectorAll('#form, #hours, #contact').forEach(el=>{ el.style.opacity=0; io.observe(el); });
+  </script>
+</body>
+</html>
